@@ -9,6 +9,8 @@
  * https://sailsjs.com/config/bootstrap
  */
 
+const PersonController = require("../api/controllers/PersonController");
+
 module.exports.bootstrap = async function() {
 
   // By convention, this is a good place to set up fake data during development.
@@ -26,5 +28,15 @@ module.exports.bootstrap = async function() {
   //   // etc.
   // ]);
   // ```
+
+  // if (await Person.count() > 0) {
+  //   return;
+  // }
+
+  // await Person.createEach([
+  //   { name: 'Martin Choy', age: 23 },
+  //   { name: 'Kenny Cheng', age: 22 }
+    
+  // ]);
 
 };
